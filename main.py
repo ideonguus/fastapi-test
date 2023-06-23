@@ -12,9 +12,9 @@ async def root():
     """
     return {"message": "Hello, FastAPI!"}
 
-@app.get("/items/{user_id}")
+@app.get("/users/{user_id}")
 async def read_item(user_id: int):
     """
     Test route for /items/{item_id}.
     """
-    return {"item_id": user_id}
+    return {"user_id": user_id}
